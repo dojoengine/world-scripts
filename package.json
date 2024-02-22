@@ -1,0 +1,19 @@
+{
+  "name": "world-scripts",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "starknet": "^5.24.3"
+  },
+  "scripts": {
+    "create": "bun run src/createAccountDetails.ts",
+    "deploy": "bun run src/deployAccount.ts",
+    "balance": "bun run src/checkBalance.ts"
+  }
+}
