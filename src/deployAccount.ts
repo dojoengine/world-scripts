@@ -26,7 +26,9 @@ const accountOptions = {
   addressSalt: process.env.ACCOUNT_PUBLIC_KEY,
 };
 
-await account.deployAccount(accountOptions, {
+const { transaction_hash } = await account.deployAccount(accountOptions, {
   nonce: 1,
   maxFee: 0, // TODO: update
 });
+
+console.log(await account.waitForTransaction(transaction_hash));

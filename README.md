@@ -8,19 +8,21 @@ To install dependencies:
 bun install
 ```
 
-To Create Account Details
+1. Create Account Details
 
 ```bash
 bun run create
 ```
 
-To Deploy Account
+2. Fund the Account address and check balance
+
+**Head to a Faucet and fund the address!**
 
 ```bash
-bun run deploy
+bun run balance
 ```
 
-To Check Balance
+3. Deploy Account
 
 ```bash
 bun run deploy
