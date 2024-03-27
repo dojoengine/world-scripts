@@ -9,7 +9,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "starknet": "^5.24.3"
+    "starknet": "^6.1.5"
   },
   "scripts": {
     "create": "bun run src/createAccountDetails.ts",
